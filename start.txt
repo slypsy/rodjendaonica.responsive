@@ -1,8 +1,0 @@
-instalirati node.js (imala)
-https://github.com/gulpjs/gulp/blob/master/docs/getting-started.md
-https://www.npmjs.com/package/gulp-sass
-https://www.npmjs.com/package/gulp-html-import
-https://www.npmjs.com/package/gulp-clean
-https://www.browsersync.io/docs/gulp
-u terminalu instaliram susy(gem install susy --pre)
---------II------------(gem install breakpoint)
