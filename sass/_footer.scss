@@ -1,0 +1,81 @@
+footer {
+  background: url("../img/background.jpg") repeat;
+  .zastavice {
+    background: url('../img/zastave3.png') repeat;
+    height: 25px;
+  }
+  .column-left, .column-center{
+    padding-bottom: 20px;
+  }
+  h3 {
+    font-size: 18px;
+    font-family: Arial, sans-serif;
+    margin-bottom: 10px;
+  }
+  h3 {
+    text-decoration: underline;
+    color: #285ca8;
+  }
+  p {
+    color: #285ca8;
+    margin: 0;
+  }
+  .igracke {
+    background: url("../img/igracke.png") no-repeat center bottom;
+    height: 73px;
+    margin-top: 0;
+
+  }
+  .copy {
+    background-color: #285ca8;
+    color: #ffffff;
+    text-align: center;
+    font-size: 14px;
+    font-style: italic;
+    p {
+      color: $bela;
+      margin: 0;
+      padding: 5px;
+    }
+  }
+  @include breakpoint($br-small){
+    .igracke{
+      margin-top: -60px;
+    }
+    .footer-sadrzaj {
+
+      text-align: left;
+      margin: 0 auto;
+      height: 150px;
+
+      .column-left {
+        float: left;
+        width: 33%;
+        padding-bottom: 0;
+      }
+      .column-right {
+        float: right;
+        width: 33%;
+
+        .zwrapper{
+          float: right;
+          text-align: right;
+
+        }
+      }
+      .column-center {
+        display: inline-block;
+        width: 33%;
+        text-align: center;
+        padding-bottom: 0;
+        .cwrapper {
+          display: inline-block;
+          text-align: left;
+        }
+      }
+
+    }
+
+  }
+
+}

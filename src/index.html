@@ -1,0 +1,93 @@
+<!doctype html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>Rodjendaonica</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/slick-1.6.0/slick/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="/slick-1.6.0/slick/slick-theme.css"/>
+
+</head>
+<body>
+
+<!--@import "header.html"-->
+<section id="rotator">
+    <div class="pozadina">
+       <div class="container">
+           <a class="button-rez" href="">Rezervacije</a>
+       </div>
+    </div>
+    <div class="crtice"></div>
+</section>
+<section id="servisi">
+    <div class="container">
+        <div class="column column-1-3">
+            <img class="icon-1" src="/img/osoba-1.jpg"/>
+            <p class="btn-servisi"><a href="">Cuvanje dece</a></p>
+        </div>
+        <div class="column column-2-3">
+            <img class="icon-2" src="/img/osoba-2.jpg"/>
+            <p class="btn-servisi"><a href="">Kreativne radionice</a></p>
+        </div>
+        <div class="column column-3-3">
+            <img class="icon-3" src="/img/osoba-3.jpg"/>
+            <p class="btn-servisi"><a href="">Animatori</a></p>
+        </div>
+    </div>
+</section>
+<section id="komentari-roditelja">
+    <div class="container">
+        <h3>Komentari roditelja</h3>
+        <p>
+            “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            Nullam neque risus, porta vitae malesuada vel, blandit quis nibh.
+            Aliquam et metus ipsum. Class aptent taciti sociosqu ad litora torquent
+            per conubia nostra, per inceptos himenaeos. Morbi mollis tellus sit amet
+            eros pretium ultricies.”
+        </p>
+        <img class="srce" src="img/srca.png" />
+    </div>
+</section>
+<section id="google-maps">
+    <div class="container">
+
+        <h3>Nalazimo se:</h3>
+        <div class="mapa">
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11235.790119252175!2d19.82157881389455!3d45.248853786417975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b10613de93455%3A0xb6f7d683724fe28!2sNovi+Sad!5e0!3m2!1sen!2srs!4v1480609578762" width="100%" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>        </div>
+    </div>
+</section>
+<!--<section id="mini-slajder">-->
+    <!--<div class="container">-->
+        <!--<div id="slideImg">-->
+            <!--<div class="slideMain">-->
+                <!--<div><img src="/img/mini-slajd-1.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-2.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-1.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-2.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-1.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-2.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-1.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-2.jpg" alt=""/></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
+@import "footer.html"
+<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
+<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript" src="/slick-1.6.0/slick/slick.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function(){
+    $('.slideMain').slick({
+        slidesToShow: 4,
+        slidesToScroll: 1,
+        autoplay: true,
+        autoplaySpeed: 2000,
+    });
+    });
+</script>
+</body>
+</html>

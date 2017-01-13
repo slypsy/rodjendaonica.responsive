@@ -1,0 +1,21 @@
+.comment {
+  display: inline-block;
+  background-color: #fee0be;
+  border: 1px solid $naradzansta;
+  margin-bottom: 20px;
+  margin-top: 40px;
+  //@include breakpoint($br-large)
+  //  @include span(4 of 12)
+  .employee {
+    display: block;
+    margin: 0 auto;
+    padding-top: 10px;
+  }
+
+  p {
+    text-align: center;
+    font-size: 18px;
+    color: #444444;
+    padding: 20px;
+  }
+}

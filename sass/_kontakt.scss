@@ -1,0 +1,57 @@
+.form-cell {
+  width: 500px;
+  height: 50px;
+  margin-top: 50px;
+  background-color: #ffe2bf;
+  border: 1px solid #ff7f2a;
+  color: #ff7f2a;
+  padding: 0;
+  @include breakpoint($br-medium){
+
+  }
+
+}
+.form-cell:nth-child(2){
+  float: right;
+
+}
+.form-cell:nth-child(4){
+  float: right;
+}
+#massage {
+  margin-top: 50px;
+  width: 100%;
+  height: 325px;
+  background-color: #ffe2bf;
+  border: 1px solid #ff7f2a;
+  padding: 0;
+
+}
+.button-form {
+  font-size: 24px;
+  color: #fdecd7;
+  background-color: #ffbe6f;
+  width: 220px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 60px;
+  padding: 0;
+  border: 1px solid #ff7f2a;
+
+}
+#check{
+  width: 15px;
+  height: 15px;
+}
+.check {
+  color: #ff7f2a;
+}
+.button-form:last-child {
+  float: right;
+}
+
+::-webkit-input-placeholder {
+  color: #ff7f2a;
+
+}
+

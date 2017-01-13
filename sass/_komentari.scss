@@ -1,0 +1,57 @@
+#komentari-roditelja {
+  background: url("/img/background.jpg") repeat;
+
+  h3{
+    position: relative;
+    @include homeTitle;
+
+  }
+
+
+    p {
+      display: inline-block;
+      text-align: center;
+      line-height: 1.8em;
+      font-style: italic;
+      border: 1px solid $zelena;
+      background: $svetlo-n;
+      font-size: 18px;
+      padding: 10px;
+
+      @include breakpoint($br-medium){
+        text-align: center;
+        padding: 0;
+        padding: 83px 160px;
+        line-height: 1.8em;
+        font-style: italic;
+        border: 1px solid $zelena;
+        background: $svetlo-n;
+
+      }
+
+
+    }
+
+  .srce {
+
+
+    top: 8px;
+    left: 16px;
+    margin-top: -420px;
+    @include breakpoint($br-large){
+      top: 8px;
+      left: 16px;
+      margin-top: -420px;
+
+
+
+    }
+    @include breakpoint($br-small){
+      width: 16%;
+
+    }
+
+  }
+
+
+}

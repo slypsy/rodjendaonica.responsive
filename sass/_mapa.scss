@@ -1,0 +1,13 @@
+#google-maps {
+  padding-bottom: 80px;
+  h3{
+    @include homeTitle;
+    margin-top: -30px;
+    padding-top: 0;
+  }
+  .mapa {
+    box-sizing: border-box;
+    border: 1px solid $zelena;
+
+  }
+}

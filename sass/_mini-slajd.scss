@@ -1,0 +1,25 @@
+#mini-slajder {
+  background: #ff7f2a;
+  height: 261px;
+
+}
+#slideImg {
+  padding-top: 38px;
+  button.slick-prev {
+    background: url("../img/prev.png");
+    height: 30px;
+    font-size: 0;
+    &:before {
+      display: none;
+    }
+  }
+  button.slick-next {
+    background: url("../img/next.png");
+    height: 30px;
+    font-size: 0;
+    &:before {
+      display: none;
+    }
+
+  }
+}

@@ -1,0 +1,43 @@
+#servisi {
+  background: $zelena;
+  //height: 390px;
+  text-align: center;
+  padding: 10px 0;
+  @include breakpoint($br-small){
+    padding: 90px 0;
+  }
+
+  .column{
+    margin-bottom: 30px;
+    &:last-child{
+      margin-bottom: 0;
+    }
+    @include breakpoint($br-small){
+      margin-bottom: 0;
+    }
+
+  }
+  p {
+    margin-top: 10px;
+    margin-bottom: 0;
+    @include breakpoint($br-small){
+      margin-top: 50px;
+    }
+  }
+  a {
+    color: $bela;
+    background: $naradzansta;
+    text-decoration: none;
+    border-radius: 3px;
+    padding: 6px;
+    font-size: 1.1em;
+    display: inline-block;
+  }
+
+  a:hover {
+    background: #ff7f2a;
+    border-radius: 3px;
+  }
+}
+
+

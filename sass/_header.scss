@@ -1,0 +1,43 @@
+#header {
+  background: $zelena;
+  nav {
+    float: right;
+
+  }
+  .crtice {
+    height: 5px;
+    background: url('/img/linija.png') repeat-x;
+  }
+  ul{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+
+  }
+  li {
+    float: left;
+    margin-left: 45px - 6px;
+    text-align: right;
+    height: 100px;
+    &:first-child {
+      margin: 0;
+    }
+
+    a {
+      color: $bela;
+      line-height: 100px;
+      padding: 3px;
+      &:hover, &.active {
+        background: $naradzansta;
+        border-radius: 3px;
+      }
+    }
+  }
+
+  a {
+    text-decoration: none;
+    color: blue;
+  }
+
+
+}
