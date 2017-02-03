@@ -41,7 +41,7 @@ $susy: (
 }
 @include breakpoint ($br-medium){
   .comment {
-    span(4 of 12);
+    @include span(4 of 12);
   }
 }
 .footer-sadrzaj {
