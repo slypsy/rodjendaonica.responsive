@@ -28,12 +28,6 @@ gulp.task('html-import', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('html-import-thing', ['html-import'], function (done) {
-    browserSync.reload();
-    done();
-});
-
-
 gulp.task('default', ['sass'], function() {
     browserSync.init({
         server: {
@@ -42,6 +36,7 @@ gulp.task('default', ['sass'], function() {
     });
 
     gulp.watch('./sass/**/*.scss', [/*'clean-css',*/'sass']);
-    gulp.watch('./src/**/*.html', ['html-import-thing']);
+    gulp.watch('./src/**/*.html', ['html-import']);
+    gulp.watch('./dist/**/*.html', browserSync.reload);
 });
 

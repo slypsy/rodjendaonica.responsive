@@ -59,19 +59,12 @@
 @import "footer.html"
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
-<script type="text/javascript" src="/slick-1.6.0/slick/slick.min.js"></script>
+@import "js-footer.html"
 <script type="text/javascript" src="/unitegallery-master/dist/js/unitegallery.min.js"></script>
 <script type="text/javascript" src="/unitegallery-master/dist/themes/tiles/ug-theme-tiles.js"></script>
 
 <script type="text/javascript">
-    $(document).ready(function(){
-        $('.slideMain').slick({
-            slidesToShow: 4,
-            slidesToScroll: 1,
-            autoplay: true,
-            autoplaySpeed: 2000,
-        });
-
+    $(function(){
         jQuery("#gallery").unitegallery({
             gallery_theme: "tiles"
         });

@@ -1,8 +1,25 @@
 #header {
   background: $zelena;
   nav {
+    float: none;
+    background-color: #0f5a4c;
+    @include breakpoint($br-small){
+      float: right;
+      background-color: transparent;
+    }
+  }
+  .burger-nav {
+    background: url("/img/burger.svg") no-repeat center center;
+    background-size: 30px 30px;
+    width: 30px;
+    height: 105px;
+    display: block;
+    padding-right: 5px;
     float: right;
-
+    cursor: pointer;
+    @include breakpoint($br-small){
+      display: none;
+    }
   }
   .crtice {
     height: 5px;
@@ -12,24 +29,45 @@
     margin: 0;
     padding: 0;
     list-style: none;
+    display: none;
+
+    @include breakpoint ($br-small){
+      display: block !important;
+      margin: 0;
+      padding: 0;
+      list-style: none;
+    }
 
   }
   li {
-    float: left;
-    margin-left: 45px - 6px;
-    text-align: right;
-    height: 100px;
-    &:first-child {
-      margin: 0;
+    float: none;
+
+    @include breakpoint ($br-small) {
+      float: left;
+      margin-left: 45px - 6px;
+      text-align: right;
+      height: 100px;
+      &:first-child {
+        margin: 0;
+      }
     }
+
 
     a {
       color: $bela;
-      line-height: 100px;
+      line-height: 50px;
       padding: 3px;
+      @include breakpoint($br-small){
+        line-height: 100px;
+      }
       &:hover, &.active {
-        background: $naradzansta;
-        border-radius: 3px;
+        background-color: transparent;
+        color: $naradzansta;
+        @include breakpoint($br-small){
+          background: #ffa539;
+          border-radius: 3px;
+          color: $bela;
+        }
       }
     }
   }

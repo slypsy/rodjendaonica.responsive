@@ -9,11 +9,10 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/slick-1.6.0/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/slick-1.6.0/slick/slick-theme.css"/>
-
 </head>
 <body>
 
-<!--@import "header.html"-->
+@import "header.html"
 <section id="rotator">
     <div class="pozadina">
        <div class="container">
@@ -42,7 +41,7 @@
     <div class="container">
         <h3>Komentari roditelja</h3>
         <p>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            “Lorem ipsum dolores sit amet, consectetur adipiscing elit.
             Nullam neque risus, porta vitae malesuada vel, blandit quis nibh.
             Aliquam et metus ipsum. Class aptent taciti sociosqu ad litora torquent
             per conubia nostra, per inceptos himenaeos. Morbi mollis tellus sit amet
@@ -78,15 +77,16 @@
 @import "footer.html"
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+@import "js-footer.html"
 <script type="text/javascript" src="/slick-1.6.0/slick/slick.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){
-    $('.slideMain').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000,
-    });
+    $(function(){
+        $('.slideMain').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
     });
 </script>
 </body>

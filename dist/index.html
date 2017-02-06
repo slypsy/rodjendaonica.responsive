@@ -9,13 +9,13 @@
     <link rel="stylesheet" href="/css/style.css">
     <link rel="stylesheet" type="text/css" href="/slick-1.6.0/slick/slick.css"/>
     <link rel="stylesheet" type="text/css" href="/slick-1.6.0/slick/slick-theme.css"/>
-
 </head>
 <body>
 
 <header id="header">
     <div class="container">
         <a class="logo" href="/"><img src="img/logo.png"></a>
+        <a class="burger-nav"></a>
         <nav>
             <ul>
                 <li><a href="index.html" class="active">Pocetna</a></li>
@@ -27,7 +27,6 @@
     </div>
     <div class="crtice"></div>
 </header>
-
 <section id="rotator">
     <div class="pozadina">
        <div class="container">
@@ -38,7 +37,7 @@
 </section>
 <section id="servisi">
     <div class="container">
-        <div class="column column-1-3 ">
+        <div class="column column-1-3">
             <img class="icon-1" src="/img/osoba-1.jpg"/>
             <p class="btn-servisi"><a href="">Cuvanje dece</a></p>
         </div>
@@ -56,7 +55,7 @@
     <div class="container">
         <h3>Komentari roditelja</h3>
         <p>
-            “Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+            “Lorem ipsum dolores sit amet, consectetur adipiscing elit.
             Nullam neque risus, porta vitae malesuada vel, blandit quis nibh.
             Aliquam et metus ipsum. Class aptent taciti sociosqu ad litora torquent
             per conubia nostra, per inceptos himenaeos. Morbi mollis tellus sit amet
@@ -73,43 +72,43 @@
             <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11235.790119252175!2d19.82157881389455!3d45.248853786417975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x475b10613de93455%3A0xb6f7d683724fe28!2sNovi+Sad!5e0!3m2!1sen!2srs!4v1480609578762" width="100%" height="360" frameborder="0" style="border:0" allowfullscreen></iframe>        </div>
     </div>
 </section>
-<section id="mini-slajder">
-    <div class="container">
-        <div id="slideImg">
-            <div class="slideMain">
-                <div><img src="/img/mini-slajd-1.jpg" alt=""/></div>
-                <div><img src="/img/mini-slajd-2.jpg" alt=""/></div>
-                <div><img src="/img/mini-slajd-1.jpg" alt=""/></div>
-                <div><img src="/img/mini-slajd-2.jpg" alt=""/></div>
-                <div><img src="/img/mini-slajd-1.jpg" alt=""/></div>
-                <div><img src="/img/mini-slajd-2.jpg" alt=""/></div>
-                <div><img src="/img/mini-slajd-1.jpg" alt=""/></div>
-                <div><img src="/img/mini-slajd-2.jpg" alt=""/></div>
-            </div>
-        </div>
-    </div>
-</section>
+<!--<section id="mini-slajder">-->
+    <!--<div class="container">-->
+        <!--<div id="slideImg">-->
+            <!--<div class="slideMain">-->
+                <!--<div><img src="/img/mini-slajd-1.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-2.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-1.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-2.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-1.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-2.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-1.jpg" alt=""/></div>-->
+                <!--<div><img src="/img/mini-slajd-2.jpg" alt=""/></div>-->
+            <!--</div>-->
+        <!--</div>-->
+    <!--</div>-->
+<!--</section>-->
 <footer>
     <div class="zastavice"></div>
     <div class="container">
-        <div class="footer-sadrzaj">
-            <div class="column-left">
+        <div class="column-1-3">
+            <div class="wrapper">
                 <h3>KONTAKT:</h3>
                 <p><b> тel. 069/ XXX XXXX<br> тel. 063/ XXX XXXX <br>e-mail: lorem@gmail.com</b></p>
             </div>
-            <div class="column-center">
-                <div class="cwrapper">
-                    <h3>ADRESA:</h3>
-                    <p><b>Lorem Ipsum 56</b></p>
-                </div>
+        </div>
+        <div class="column-2-3">
+            <div class="wrapper">
+                <h3>ADRESA:</h3>
+                <p><b>Lorem Ipsum 56</b></p>
             </div>
-            <div class="column-right">
-                <div class="zwrapper">
-                    <h3>PRATITE NAS NA:</h3>
-                    <a class="facebook" href="https://www.facebook.com/"><img src="img/face.png"/></a>
-                    <a class="y-tube" href="https://www.youtube.com/"><img src="img/y-tube.png"/></a>
-                    <a class="twitter" href="https://twitter.com/login"><img src="img/twitter.png"/></a>
-                </div>
+        </div>
+        <div class="column-3-3">
+            <div class="wrapper">
+                <h3>PRATITE NAS NA:</h3>
+                <a class="facebook" href="https://www.facebook.com/"><img src="img/face.png"/></a>
+                <a class="y-tube" href="https://www.youtube.com/"><img src="img/y-tube.png"/></a>
+                <a class="twitter" href="https://twitter.com/login"><img src="img/twitter.png"/></a>
             </div>
         </div>
 
@@ -121,15 +120,22 @@
 </footer>
 <script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>
 <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
+<script type="text/javascript">
+    $(function(){
+        $('.burger-nav').click(function(){
+            $('header nav ul').slideToggle();
+        });
+    });
+</script>
 <script type="text/javascript" src="/slick-1.6.0/slick/slick.min.js"></script>
 <script type="text/javascript">
-    $(document).ready(function(){
-    $('.slideMain').slick({
-        slidesToShow: 4,
-        slidesToScroll: 1,
-        autoplay: true,
-        autoplaySpeed: 2000
-    });
+    $(function(){
+        $('.slideMain').slick({
+            slidesToShow: 4,
+            slidesToScroll: 1,
+            autoplay: true,
+            autoplaySpeed: 2000,
+        });
     });
 </script>
 </body>
