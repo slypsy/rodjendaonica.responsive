@@ -40,6 +40,14 @@ $susy: (
    }
 }
 
+@include breakpoint($br-small){
+  .column-1-2,.column-2-2{
+    @include span(6);
+  }
+  .column-2-2{
+    @include last;
+  }
+}
 
 
 

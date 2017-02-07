@@ -32,14 +32,12 @@
 
   .srce {
 
-    top: 8px;
-    left: 16px;
-    margin-top: -420px;
+    display: none;
     @include breakpoint($br-large) {
       top: 8px;
       left: 16px;
       margin-top: -420px;
-
+      display: block;
     }
     @include breakpoint($br-small) {
       width: 16%;

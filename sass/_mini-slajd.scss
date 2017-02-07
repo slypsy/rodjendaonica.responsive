@@ -5,13 +5,19 @@
 }
 #slideImg {
   padding-top: 38px;
+  .slick-slide img {
+    margin: 0 auto;
+  }
   button.slick-prev {
     background: url("../img/prev.png");
     height: 30px;
     font-size: 0;
+    margin: 0 auto;
     &:before {
       display: none;
     }
+
+
   }
   button.slick-next {
     background: url("../img/next.png");

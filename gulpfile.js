@@ -7,7 +7,7 @@ var browserSync = require('browser-sync').create();
 gulp.task('sass', function () {
     return gulp.src('./sass/**/*.scss')
         .pipe(sass({
-            outputStyle: 'compressed',
+            //outputStyle: 'compressed',
             includePaths: [
                 'node_modules/susy/sass',
                 'node_modules/breakpoint-sass/stylesheets'
