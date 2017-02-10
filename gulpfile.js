@@ -13,7 +13,6 @@ gulp.task('sass', function () {
                 'node_modules/breakpoint-sass/stylesheets'
             ]
         }).on('error', sass.logError))
-        .pipe(gulp.dest('./css'))
         .pipe(gulp.dest('./dist/css'))
         .pipe(browserSync.stream());
 });
@@ -28,7 +27,7 @@ gulp.task('html-import', function () {
         .pipe(gulp.dest('dist'));
 });
 
-gulp.task('default', ['sass'], function() {
+gulp.task('default', ['sass', 'html-import'], function() {
     browserSync.init({
         server: {
             baseDir: "./dist"
